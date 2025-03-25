@@ -34,7 +34,7 @@ class Net(nn.Module):
         self.BN4 = nn.BatchNorm2d(128)
         self.fc1 = nn.Linear(128 * 2 * 2, 128)
         self.fc2 = nn.Linear(128, 32)
-        self.fc3 = nn.Linear(32, 10)
+        self.fc3 = nn.Linear(32, 3)
         self.dropout1 = nn.Dropout(p=0.5)
         self.dropout2 = nn.Dropout(p=0.5)
 
